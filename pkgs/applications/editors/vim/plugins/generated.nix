@@ -15558,6 +15558,19 @@ final: prev: {
     meta.hydraPlatforms = [ ];
   };
 
+  tiny-code-action-nvim = buildVimPlugin {
+    pname = "tiny-code-action.nvim";
+    version = "2025-11-11";
+    src = fetchFromGitHub {
+      owner = "rachartier";
+      repo = "tiny-code-action.nvim";
+      rev = "b6c9ee6444196c1ca616bf4ff381124b140db21f";
+      sha256 = "1p7vr0my7s27w80iws7fkxb9ypzrl0mycijyfk8mhljmabq485aw";
+    };
+    meta.homepage = "https://github.com/rachartier/tiny-code-action.nvim/";
+    meta.hydraPlatforms = [ ];
+  };
+
   tiny-devicons-auto-colors-nvim = buildVimPlugin {
     pname = "tiny-devicons-auto-colors.nvim";
     version = "2025-01-03";
