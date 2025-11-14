@@ -4225,4 +4225,12 @@ assertNoAdditions {
       nvim-lspconfig
     ];
   };
+
+  tiny-code-action-nvim = super.tiny-code-action-nvim.overrideAttrs {
+    dependencies = with self; [
+        plenary-nvim
+        fzf-lua
+        snacks-nvim
+    ];
+  };
 }
